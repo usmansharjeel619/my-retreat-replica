@@ -1,27 +1,30 @@
 const teamMembers = [
   {
-    name: 'Charlotte',
-    role: 'Chef',
-    image: 'https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=400&h=400&fit=crop&crop=face',
-    description: 'Creating nourishing, gourmet meals',
+    name: "Charlotte",
+    role: "Chef",
+    image: "/images/team/charlotte.jpg",
+    description: "Creating nourishing, gourmet meals",
   },
   {
-    name: 'Rabi',
-    role: 'Counsellor',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-    description: 'Leading transformational sessions',
+    name: "Rabi",
+    role: "Counsellor",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    description: "Leading transformational sessions",
   },
   {
-    name: 'Steven',
-    role: 'Boxing Coach',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
-    description: 'Partner fitness and connection training',
+    name: "Steven",
+    role: "Boxing Coach",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    description: "Partner fitness and connection training",
   },
   {
-    name: 'Nicole',
-    role: 'Counsellor',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
-    description: 'Deep emotional healing sessions',
+    name: "Nicole",
+    role: "Counsellor",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+    description: "Deep emotional healing sessions",
   },
 ];
 
@@ -31,7 +34,9 @@ const TeamSection = () => {
       <div className="container-wide">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium uppercase tracking-wider mb-3">Expert Guidance</p>
+          <p className="text-primary font-medium uppercase tracking-wider mb-3">
+            Expert Guidance
+          </p>
           <h2 className="heading-lg">
             Meet Our <span className="text-gradient">Team</span>
           </h2>
@@ -53,9 +58,13 @@ const TeamSection = () => {
                   className="relative w-full h-full object-cover rounded-full border-4 border-card shadow-warm group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-1">{member.name}</h3>
+              <h3 className="text-xl font-serif font-semibold mb-1">
+                {member.name}
+              </h3>
               <p className="text-primary font-medium mb-2">{member.role}</p>
-              <p className="text-sm text-muted-foreground">{member.description}</p>
+              <p className="text-sm text-muted-foreground">
+                {member.description}
+              </p>
             </div>
           ))}
         </div>
