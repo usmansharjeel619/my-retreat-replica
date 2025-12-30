@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from '@/components/retreat/Navigation';
+import HeroSection from '@/components/retreat/HeroSection';
+import WhySection from '@/components/retreat/WhySection';
+import TeamSection from '@/components/retreat/TeamSection';
+import ItinerarySection from '@/components/retreat/ItinerarySection';
+import IncludedSection from '@/components/retreat/IncludedSection';
+import PricingSection from '@/components/retreat/PricingSection';
+import TestimonialsSection from '@/components/retreat/TestimonialsSection';
+import AccommodationSection from '@/components/retreat/AccommodationSection';
+import FAQSection from '@/components/retreat/FAQSection';
+import CTASection from '@/components/retreat/CTASection';
+import Footer from '@/components/retreat/Footer';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navigation />
+      <main>
+        <HeroSection />
+        <WhySection />
+        <TeamSection />
+        <ItinerarySection />
+        <IncludedSection />
+        <TestimonialsSection />
+        <AccommodationSection />
+        <PricingSection />
+        <FAQSection />
+        <CTASection />
+      </main>
+      <Footer />
     </div>
   );
 };
