@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { Heart, Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { href: '#itinerary', label: 'Itinerary' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#accommodation', label: 'Accommodation' },
-  { href: '#faq', label: 'FAQ' },
+  { href: "#itinerary", label: "Itinerary" },
+  { href: "#pricing", label: "Pricing" },
+  { href: "#accommodation", label: "Accommodation" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 const Navigation = () => {
@@ -18,34 +18,26 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-background/95 backdrop-blur-md shadow-sm py-3'
-          : 'bg-transparent py-5'
+          ? "bg-foreground/95 backdrop-blur-md shadow-lg py-3"
+          : "bg-foreground/90 backdrop-blur-sm py-4"
       }`}
     >
       <div className="container-wide flex items-center justify-between px-4">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <Heart
-            className={`w-6 h-6 transition-colors ${
-              isScrolled ? 'text-primary' : 'text-primary'
-            } group-hover:scale-110 transition-transform`}
-            fill="currentColor"
+        <a href="#" className="flex items-center group">
+          <img
+            src="/images/logo.png"
+            alt="Luxe Retreats"
+            className="h-10 w-auto transition-transform group-hover:scale-105"
           />
-          <span
-            className={`text-lg font-serif font-semibold transition-colors ${
-              isScrolled ? 'text-foreground' : 'text-foreground'
-            }`}
-          >
-            Luxe Retreats
-          </span>
         </a>
 
         {/* Desktop Navigation */}
@@ -54,9 +46,7 @@ const Navigation = () => {
             <a
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isScrolled ? 'text-foreground/80' : 'text-foreground/80'
-              }`}
+              className="text-sm font-medium text-background/80 hover:text-background transition-colors"
             >
               {link.label}
             </a>
@@ -68,7 +58,7 @@ const Navigation = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 text-background"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -82,13 +72,13 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border shadow-lg">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-foreground border-b border-background/20 shadow-lg">
           <nav className="flex flex-col p-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="py-3 text-foreground/80 hover:text-primary transition-colors border-b border-border/50 last:border-0"
+                className="py-3 text-background/80 hover:text-background transition-colors border-b border-background/20 last:border-0"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}

@@ -2,28 +2,25 @@ const teamMembers = [
   {
     name: "Charlotte",
     role: "Chef",
-    image: "/images/team/charlotte.jpg",
+    image: "/images/team/charlotte-profile.jpg",
     description: "Creating nourishing, gourmet meals",
   },
   {
     name: "Rabi",
     role: "Counsellor",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    image: "/images/team/rabi-profile.jpg",
     description: "Leading transformational sessions",
   },
   {
     name: "Steven",
     role: "Boxing Coach",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    image: "/images/team/Steven-profile.jpg",
     description: "Partner fitness and connection training",
   },
   {
     name: "Nicole",
     role: "Counsellor",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+    image: "/images/team/Nicole-profile.jpg",
     description: "Deep emotional healing sessions",
   },
 ];
