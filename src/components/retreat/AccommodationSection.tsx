@@ -7,28 +7,15 @@ import {
 } from '@/components/ui/carousel';
 import { Wifi, Car, Waves, Mountain, Coffee, Sparkles } from 'lucide-react';
 
-const images = [
-  {
-    src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop',
-    alt: 'Luxury villa exterior',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop',
-    alt: 'Villa living area',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop',
-    alt: 'Bedroom suite',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop',
-    alt: 'Pool area',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&h=600&fit=crop',
-    alt: 'Outdoor dining',
-  },
-];
+const villaImages = Array.from({ length: 15 }, (_, i) => ({
+  src: `/images/Villa/villa${i + 1}.jpeg`,
+  alt: `Villa image ${i + 1}`,
+}));
+
+const activityImages = Array.from({ length: 9 }, (_, i) => ({
+  src: `/images/Activity/${i + 1}.jpeg`,
+  alt: `Activity ${i + 1}`,
+}));
 
 const amenities = [
   { icon: Wifi, label: 'Free WiFi' },
@@ -43,12 +30,13 @@ const AccommodationSection = () => {
   return (
     <section id="accommodation" className="section-padding bg-background">
       <div className="container-wide">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        {/* Villa Section */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Gallery */}
           <div>
             <Carousel opts={{ loop: true }} className="w-full">
               <CarouselContent>
-                {images.map((image, index) => (
+                {villaImages.map((image, index) => (
                   <CarouselItem key={index}>
                     <div className="overflow-hidden rounded-3xl">
                       <img
@@ -90,6 +78,26 @@ const AccommodationSection = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Activities Section */}
+        <div className="text-center mb-10">
+          <p className="text-primary font-medium uppercase tracking-wider mb-3">Experience</p>
+          <h2 className="heading-lg mb-6">
+            Retreat <span className="text-gradient">Activities</span>
+          </h2>
+        </div>
+        
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {activityImages.map((image, index) => (
+            <div key={index} className="overflow-hidden rounded-2xl group">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-[200px] md:h-[250px] object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -41,7 +41,7 @@ const CTASection = () => {
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-full text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300"
             asChild
           >
-            <a href="tel:+447000000000" className="flex items-center gap-2">
+            <a href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
               Book a Call
             </a>
