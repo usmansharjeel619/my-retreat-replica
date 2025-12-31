@@ -48,7 +48,7 @@ const inclusions = [
   { icon: Car, title: "Transport", description: "Pick up & drop off" },
 ];
 
-const extras = ["Massage", "Mama Beach Day Out", "Aqua Kart", "Eating Outside"];
+const extras = ["Massage", "Eating Outside"];
 
 const IncludedSection = () => {
   return (

@@ -3,45 +3,34 @@ import { Button } from "@/components/ui/button";
 
 const pricingTiers = [
   {
-    name: "Single Triple Shared",
-    description: "Bed in a triple shared room",
+    name: "Double Bed Room",
+    description: "En-suite",
     price: "£2,000",
+    priceNote: "per couple",
     features: [
       "All retreat activities included",
       "Full meal plan",
-      "Group counselling sessions",
-      "Shared accommodation",
+      "Private 1-to-1 counselling",
+      "En-suite bathroom",
       "Transport included",
     ],
     popular: false,
   },
   {
-    name: "Double Bed Shared",
-    description: "Double bed in a triple shared room",
+    name: "Sea View Double Bed Room",
+    description: "Premium en-suite with stunning views",
     price: "£2,500",
+    priceNote: "per couple",
     features: [
       "All retreat activities included",
       "Full meal plan",
       "Private 1-to-1 counselling",
-      "More privacy",
+      "Beautiful sea views",
+      "En-suite bathroom",
       "Transport included",
       "Priority booking",
     ],
     popular: true,
-  },
-  {
-    name: "Private Room",
-    description: "Based on availability and request",
-    price: "Enquire",
-    features: [
-      "All retreat activities included",
-      "Full meal plan",
-      "Private 1-to-1 counselling",
-      "Complete privacy",
-      "Transport included",
-      "VIP treatment",
-    ],
-    popular: false,
   },
 ];
 
@@ -63,7 +52,7 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
           {pricingTiers.map((tier, index) => (
             <div
               key={tier.name}
@@ -105,17 +94,15 @@ const PricingSection = () => {
                 >
                   {tier.price}
                 </div>
-                {tier.price !== "Enquire" && (
-                  <p
-                    className={`text-sm mt-1 ${
-                      tier.popular
-                        ? "text-primary-foreground/70"
-                        : "text-muted-foreground"
-                    }`}
-                  >
-                    per person
-                  </p>
-                )}
+                <p
+                  className={`text-sm mt-1 ${
+                    tier.popular
+                      ? "text-primary-foreground/70"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {tier.priceNote}
+                </p>
               </div>
 
               <ul className="space-y-3 mb-8">
@@ -151,7 +138,7 @@ const PricingSection = () => {
                 size="lg"
                 asChild
               >
-                <a href="#booking">Reserve Your Space</a>
+                <a href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">Reserve Your Space</a>
               </Button>
             </div>
           ))}
