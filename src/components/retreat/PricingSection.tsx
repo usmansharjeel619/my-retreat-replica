@@ -32,6 +32,20 @@ const pricingTiers = [
     ],
     popular: true,
   },
+  {
+    name: "Private Room",
+    description: "Based on availability and request",
+    price: "Enquire",
+    features: [
+      "All retreat activities included",
+      "Full meal plan",
+      "Private 1-to-1 counselling",
+      "Complete privacy",
+      "Transport included",
+      "VIP treatment",
+    ],
+    popular: false,
+  },
 ];
 
 const PricingSection = () => {
@@ -52,7 +66,7 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {pricingTiers.map((tier, index) => (
             <div
               key={tier.name}
@@ -138,7 +152,13 @@ const PricingSection = () => {
                 size="lg"
                 asChild
               >
-                <a href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">Reserve Your Space</a>
+                <a
+                  href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Reserve Your Space
+                </a>
               </Button>
             </div>
           ))}

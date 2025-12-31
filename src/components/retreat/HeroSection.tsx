@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
-  const retreatDate = new Date("2026-04-24T15:00:00");
+  const retreatDate = new Date("2026-04-24T00:00:00");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -89,7 +89,13 @@ const HeroSection = () => {
             className="text-lg px-8 py-6 rounded-full shadow-warm hover:shadow-glow transition-all duration-300 animate-pulse-glow"
             asChild
           >
-            <a href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">Book Your Space</a>
+            <a
+              href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book Your Space
+            </a>
           </Button>
         </div>
 
