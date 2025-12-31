@@ -1,45 +1,45 @@
-import { Check, Star } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Check, Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const pricingTiers = [
   {
-    name: 'Single Triple Shared',
-    description: 'Bed in a triple shared room',
-    price: '£1,600',
+    name: "Single Triple Shared",
+    description: "Bed in a triple shared room",
+    price: "£2,000",
     features: [
-      'All retreat activities included',
-      'Full meal plan',
-      'Group counselling sessions',
-      'Shared accommodation',
-      'Transport included',
+      "All retreat activities included",
+      "Full meal plan",
+      "Group counselling sessions",
+      "Shared accommodation",
+      "Transport included",
     ],
     popular: false,
   },
   {
-    name: 'Double Bed Shared',
-    description: 'Double bed in a triple shared room',
-    price: '£2,000',
+    name: "Double Bed Shared",
+    description: "Double bed in a triple shared room",
+    price: "£2,500",
     features: [
-      'All retreat activities included',
-      'Full meal plan',
-      'Private 1-to-1 counselling',
-      'More privacy',
-      'Transport included',
-      'Priority booking',
+      "All retreat activities included",
+      "Full meal plan",
+      "Private 1-to-1 counselling",
+      "More privacy",
+      "Transport included",
+      "Priority booking",
     ],
     popular: true,
   },
   {
-    name: 'Private Room',
-    description: 'Based on availability and request',
-    price: 'Enquire',
+    name: "Private Room",
+    description: "Based on availability and request",
+    price: "Enquire",
     features: [
-      'All retreat activities included',
-      'Full meal plan',
-      'Private 1-to-1 counselling',
-      'Complete privacy',
-      'Transport included',
-      'VIP treatment',
+      "All retreat activities included",
+      "Full meal plan",
+      "Private 1-to-1 counselling",
+      "Complete privacy",
+      "Transport included",
+      "VIP treatment",
     ],
     popular: false,
   },
@@ -51,7 +51,9 @@ const PricingSection = () => {
       <div className="container-wide">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium uppercase tracking-wider mb-3">Investment</p>
+          <p className="text-primary font-medium uppercase tracking-wider mb-3">
+            Investment
+          </p>
           <h2 className="heading-lg mb-4">
             Choose Your <span className="text-gradient">Experience</span>
           </h2>
@@ -67,8 +69,8 @@ const PricingSection = () => {
               key={tier.name}
               className={`relative rounded-3xl p-6 md:p-8 transition-all duration-300 hover:-translate-y-2 ${
                 tier.popular
-                  ? 'bg-gradient-to-br from-primary to-accent text-primary-foreground shadow-glow scale-105'
-                  : 'bg-card border border-border shadow-warm'
+                  ? "bg-gradient-to-br from-primary to-accent text-primary-foreground shadow-glow scale-105"
+                  : "bg-card border border-border shadow-warm"
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -80,17 +82,37 @@ const PricingSection = () => {
               )}
 
               <div className="text-center mb-8">
-                <h3 className={`text-xl font-serif font-semibold mb-2 ${tier.popular ? 'text-primary-foreground' : 'text-foreground'}`}>
+                <h3
+                  className={`text-xl font-serif font-semibold mb-2 ${
+                    tier.popular ? "text-primary-foreground" : "text-foreground"
+                  }`}
+                >
                   {tier.name}
                 </h3>
-                <p className={`text-sm mb-4 ${tier.popular ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>
+                <p
+                  className={`text-sm mb-4 ${
+                    tier.popular
+                      ? "text-primary-foreground/80"
+                      : "text-muted-foreground"
+                  }`}
+                >
                   {tier.description}
                 </p>
-                <div className={`text-4xl md:text-5xl font-serif font-bold ${tier.popular ? 'text-primary-foreground' : 'text-foreground'}`}>
+                <div
+                  className={`text-4xl md:text-5xl font-serif font-bold ${
+                    tier.popular ? "text-primary-foreground" : "text-foreground"
+                  }`}
+                >
                   {tier.price}
                 </div>
-                {tier.price !== 'Enquire' && (
-                  <p className={`text-sm mt-1 ${tier.popular ? 'text-primary-foreground/70' : 'text-muted-foreground'}`}>
+                {tier.price !== "Enquire" && (
+                  <p
+                    className={`text-sm mt-1 ${
+                      tier.popular
+                        ? "text-primary-foreground/70"
+                        : "text-muted-foreground"
+                    }`}
+                  >
                     per person
                   </p>
                 )}
@@ -99,8 +121,20 @@ const PricingSection = () => {
               <ul className="space-y-3 mb-8">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className={`w-5 h-5 shrink-0 mt-0.5 ${tier.popular ? 'text-primary-foreground' : 'text-primary'}`} />
-                    <span className={`text-sm ${tier.popular ? 'text-primary-foreground/90' : 'text-foreground'}`}>
+                    <Check
+                      className={`w-5 h-5 shrink-0 mt-0.5 ${
+                        tier.popular
+                          ? "text-primary-foreground"
+                          : "text-primary"
+                      }`}
+                    />
+                    <span
+                      className={`text-sm ${
+                        tier.popular
+                          ? "text-primary-foreground/90"
+                          : "text-foreground"
+                      }`}
+                    >
                       {feature}
                     </span>
                   </li>
@@ -110,10 +144,10 @@ const PricingSection = () => {
               <Button
                 className={`w-full rounded-full ${
                   tier.popular
-                    ? 'bg-primary-foreground text-primary hover:bg-primary-foreground/90'
-                    : ''
+                    ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                    : ""
                 }`}
-                variant={tier.popular ? 'secondary' : 'default'}
+                variant={tier.popular ? "secondary" : "default"}
                 size="lg"
                 asChild
               >
