@@ -30,6 +30,11 @@ const testimonials = [
   },
 ];
 
+const reviewVideos = [
+  '/videos/review1.mp4',
+  '/videos/review2.mp4',
+];
+
 const TestimonialsSection = () => {
   return (
     <section className="section-padding bg-warm-gradient overflow-hidden">
@@ -40,6 +45,23 @@ const TestimonialsSection = () => {
           <h2 className="heading-lg">
             What Couples <span className="text-gradient">Are Saying</span>
           </h2>
+        </div>
+
+        {/* Video Reviews */}
+        <div className="flex flex-col md:flex-row justify-center gap-6 mb-16">
+          {reviewVideos.map((video, index) => (
+            <div key={index} className="relative rounded-2xl overflow-hidden shadow-luxury max-w-[280px] mx-auto md:mx-0">
+              <video
+                src={video}
+                controls
+                playsInline
+                className="w-full h-auto aspect-[9/16] object-cover bg-black"
+                poster=""
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          ))}
         </div>
 
         {/* Carousel */}
