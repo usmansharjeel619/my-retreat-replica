@@ -50,7 +50,7 @@ const Footer = () => {
           {/* Social */}
           <div className="flex items-center gap-4">
             <a
-              href="https://www.instagram.com/mindoraworth/"
+              href="https://www.instagram.com/luxe.retreat?igsh=Nm1wZHg3NzU2em10&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -59,7 +59,7 @@ const Footer = () => {
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="https://www.facebook.com/share/r/1Cbug7Ms36/"
+              href="https://www.facebook.com/share/19z7YUxSnc/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -68,7 +68,7 @@ const Footer = () => {
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="https://www.tiktok.com/@mindoraworth/video/7590008233184480534"
+              href="https://www.tiktok.com/@luxe.retreat.coun?_r=1&_t=ZN-92hkWrqVjFO"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -77,7 +77,7 @@ const Footer = () => {
               <TikTokIcon />
             </a>
             <a
-              href="https://youtube.com/shorts/vZau4LlB7jg?si=6J0n6gNzWRfmPG4s"
+              href="https://youtube.com/@rabimushiya-u4m?si=KEpJDSWGk26cO1pI"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
