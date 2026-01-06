@@ -93,7 +93,7 @@ const Footer = () => {
             © {currentYear} Luxe Couples Reconnection Retreat. All rights
             reserved.
           </p>
-          <p className="mt-2">North Wales, UK • 24–27 April 2026</p>
+          <p className="mt-2">North Wales, UK • 8–11 May 2026</p>
         </div>
       </div>
     </footer>

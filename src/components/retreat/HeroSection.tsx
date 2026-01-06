@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
-  const retreatDate = new Date("2026-04-24T00:00:00");
+  const retreatDate = new Date("2026-05-08T00:00:00");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -56,7 +56,7 @@ const HeroSection = () => {
           </div>
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Calendar className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">24–27 April 2026</span>
+            <span className="text-sm font-medium">8–11 May 2026</span>
           </div>
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Users className="w-4 h-4 text-primary" />
