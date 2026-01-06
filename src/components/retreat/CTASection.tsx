@@ -21,7 +21,7 @@ const CTASection = () => {
         </h2>
 
         <p className="body-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-          Limited spaces available for our April 24–27 retreat in North Wales.
+          Limited spaces available for our May 08–11 retreat in North Wales.
           Don't wait until it's too late – your relationship deserves this
           investment.
         </p>
@@ -41,7 +41,12 @@ const CTASection = () => {
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-full text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300"
             asChild
           >
-            <a href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a
+              href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
               <Phone className="w-5 h-5" />
               Book a Call
             </a>
@@ -49,7 +54,7 @@ const CTASection = () => {
 
           <div className="flex items-center justify-center gap-2 mt-6 text-primary-foreground/70">
             <Calendar className="w-4 h-4" />
-            <span className="text-sm">24–27 April 2026 • North Wales</span>
+            <span className="text-sm">08–11 May 2026 • North Wales</span>
           </div>
         </div>
 
