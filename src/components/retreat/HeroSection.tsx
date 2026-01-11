@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
-  const retreatDate = new Date("2026-05-08T00:00:00");
+  const retreatDate = new Date("2026-05-18T00:00:00");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -52,7 +52,9 @@ const HeroSection = () => {
         >
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">6 nights, 7 days Marrakech</span>
+            <span className="text-sm font-medium">
+              6 nights, 7 days Marrakech
+            </span>
           </div>
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Calendar className="w-4 h-4 text-primary" />
@@ -80,7 +82,10 @@ const HeroSection = () => {
         </div>
 
         {/* Price & CTA */}
-        <div className="animate-fade-in flex flex-wrap justify-center gap-4" style={{ animationDelay: "0.5s" }}>
+        <div
+          className="animate-fade-in flex flex-wrap justify-center gap-4"
+          style={{ animationDelay: "0.5s" }}
+        >
           <Button
             size="lg"
             className="text-lg px-8 py-6 rounded-full shadow-warm hover:shadow-glow transition-all duration-300 animate-pulse-glow"

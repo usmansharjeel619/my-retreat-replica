@@ -21,8 +21,8 @@ const CTASection = () => {
         </h2>
 
         <p className="body-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-          Limited spaces available for our May retreats in Marrakech. Don't
-          wait until it's too late – your relationship deserves this investment.
+          Limited spaces available for our May retreats in Marrakech. Don't wait
+          until it's too late – your relationship deserves this investment.
         </p>
 
         {/* Booking CTA */}
@@ -53,7 +53,9 @@ const CTASection = () => {
 
           <div className="flex items-center justify-center gap-2 mt-6 text-primary-foreground/70">
             <Calendar className="w-4 h-4" />
-            <span className="text-sm">18-24 May or 25-31 May 2026 • Marrakech</span>
+            <span className="text-sm">
+              18-24 May & 25-31 May 2026 • Marrakech
+            </span>
           </div>
         </div>
 
