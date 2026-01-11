@@ -4,26 +4,26 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
-import { Wifi, Car, Waves, Mountain, Coffee, Sparkles } from 'lucide-react';
+} from "@/components/ui/carousel";
+import { Wifi, Car, Waves, Mountain, Coffee, Sparkles } from "lucide-react";
 
-const villaImages = Array.from({ length: 15 }, (_, i) => ({
+const villaImages = Array.from({ length: 29 }, (_, i) => ({
   src: `/images/Villa/villa${i + 1}.jpeg`,
   alt: `Villa image ${i + 1}`,
 }));
 
-const activityImages = Array.from({ length: 9 }, (_, i) => ({
+const activityImages = Array.from({ length: 15 }, (_, i) => ({
   src: `/images/Activity/${i + 1}.jpeg`,
   alt: `Activity ${i + 1}`,
 }));
 
 const amenities = [
-  { icon: Wifi, label: 'Free WiFi' },
-  { icon: Car, label: 'Free Parking' },
-  { icon: Waves, label: 'Hot Tub' },
-  { icon: Mountain, label: 'Scenic Views' },
-  { icon: Coffee, label: 'Chef Service' },
-  { icon: Sparkles, label: 'Daily Housekeeping' },
+  { icon: Wifi, label: "Free WiFi" },
+  { icon: Car, label: "Free Parking" },
+  { icon: Waves, label: "Hot Tub" },
+  { icon: Mountain, label: "Scenic Views" },
+  { icon: Coffee, label: "Chef Service" },
+  { icon: Sparkles, label: "Daily Housekeeping" },
 ];
 
 const AccommodationSection = () => {
@@ -55,14 +55,18 @@ const AccommodationSection = () => {
 
           {/* Content */}
           <div>
-            <p className="text-primary font-medium uppercase tracking-wider mb-3">Your Home</p>
+            <p className="text-primary font-medium uppercase tracking-wider mb-3">
+              Your Home
+            </p>
             <h2 className="heading-lg mb-6">
               Luxury Villa <span className="text-gradient">Retreat</span>
             </h2>
             <p className="body-lg text-muted-foreground mb-8">
-              Nestled in the beautiful Welsh countryside, our handpicked luxury villa offers the perfect 
-              sanctuary for your reconnection journey. With stunning views, spacious private suites, and 
-              world-class amenities, you'll have everything you need to relax and focus on your relationship.
+              Nestled in the beautiful city of Marrakech, our handpicked luxury
+              villa offers the perfect sanctuary for your reconnection journey.
+              With stunning views, spacious private suites, and world-class
+              amenities, you'll have everything you need to relax and focus on
+              your relationship.
             </p>
 
             {/* Amenities */}
@@ -82,12 +86,14 @@ const AccommodationSection = () => {
 
         {/* Activities Section */}
         <div className="text-center mb-10">
-          <p className="text-primary font-medium uppercase tracking-wider mb-3">Experience</p>
+          <p className="text-primary font-medium uppercase tracking-wider mb-3">
+            Experience
+          </p>
           <h2 className="heading-lg mb-6">
             Retreat <span className="text-gradient">Activities</span>
           </h2>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {activityImages.map((image, index) => (
             <div key={index} className="overflow-hidden rounded-2xl group">

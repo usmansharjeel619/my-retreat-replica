@@ -38,7 +38,7 @@ const HeroSection = () => {
           className="body-lg text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in"
           style={{ animationDelay: "0.2s" }}
         >
-          3 Nights, 4 Days of Restoration
+          6 Nighs, 7 Days of Restoration
           <br />
           <span className="font-medium text-foreground">
             All-Inclusive Experience
@@ -52,7 +52,7 @@ const HeroSection = () => {
         >
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">North Wales</span>
+            <span className="text-sm font-medium">Marrekech</span>
           </div>
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Calendar className="w-4 h-4 text-primary" />
@@ -77,13 +77,6 @@ const HeroSection = () => {
 
         {/* Price & CTA */}
         <div className="animate-fade-in" style={{ animationDelay: "0.5s" }}>
-          <p className="text-muted-foreground mb-2">From</p>
-          <p className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
-            £2,000{" "}
-            <span className="text-lg font-normal text-muted-foreground">
-              per couple
-            </span>
-          </p>
           <Button
             size="lg"
             className="text-lg px-8 py-6 rounded-full shadow-warm hover:shadow-glow transition-all duration-300 animate-pulse-glow"

@@ -5,10 +5,10 @@ const pricingTiers = [
   {
     name: "Double Bed Room",
     description: "En-suite",
-    price: "£2,000",
+    price: "£2,500",
     priceNote: "per couple",
     features: [
-      "All retreat activities included",
+      "Majority of retreat activities included",
       "Full meal plan",
       "Private 1-to-1 counselling",
       "En-suite bathroom",
@@ -19,7 +19,7 @@ const pricingTiers = [
   {
     name: "Sea View Double Bed Room",
     description: "Premium en-suite with stunning views",
-    price: "£2,500",
+    price: "£3,000",
     priceNote: "per couple",
     features: [
       "All retreat activities included",
