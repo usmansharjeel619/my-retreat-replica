@@ -93,7 +93,7 @@ const Footer = () => {
             © {currentYear} Luxe Couples Reconnection Retreat. All rights
             reserved.
           </p>
-          <p className="mt-2">Marrekech • 8–11 May 2026</p>
+          <p className="mt-2">Marrakech • 18-24 May & 25-31 May 2026</p>
         </div>
       </div>
     </footer>
