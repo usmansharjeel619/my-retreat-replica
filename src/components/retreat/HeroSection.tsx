@@ -1,4 +1,4 @@
-import { Heart, MapPin, Calendar, Users } from "lucide-react";
+import { Heart, MapPin, Calendar, Users, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "./CountdownTimer";
 
@@ -52,11 +52,15 @@ const HeroSection = () => {
         >
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Marrekech</span>
+            <span className="text-sm font-medium">6 nights, 7 days Marrakech</span>
           </div>
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Calendar className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">8–11 May 2026</span>
+            <span className="text-sm font-medium">18-24 May 2026</span>
+          </div>
+          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+            <Calendar className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium">25-31 May 2026</span>
           </div>
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Users className="w-4 h-4 text-primary" />
@@ -76,7 +80,7 @@ const HeroSection = () => {
         </div>
 
         {/* Price & CTA */}
-        <div className="animate-fade-in" style={{ animationDelay: "0.5s" }}>
+        <div className="animate-fade-in flex flex-wrap justify-center gap-4" style={{ animationDelay: "0.5s" }}>
           <Button
             size="lg"
             className="text-lg px-8 py-6 rounded-full shadow-warm hover:shadow-glow transition-all duration-300 animate-pulse-glow"
@@ -88,6 +92,21 @@ const HeroSection = () => {
               rel="noopener noreferrer"
             >
               Book Your Space
+            </a>
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="text-lg px-8 py-6 rounded-full border-primary/30 hover:bg-primary/10 transition-all duration-300"
+            asChild
+          >
+            <a
+              href="https://wa.me/447521476846"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              WhatsApp Us
             </a>
           </Button>
         </div>
