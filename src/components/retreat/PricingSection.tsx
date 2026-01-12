@@ -153,7 +153,7 @@ const PricingSection = () => {
                 asChild
               >
                 <a
-                  href="https://docs.google.com/forms/d/1iSSU5UVtOaGbo1M-B8g3T1QcVCZkkGxJ8mgt308SFgk/edit?usp=drivesdk"
+                  href="https://calendly.com/luxe-retreat/20min"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
