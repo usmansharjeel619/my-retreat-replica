@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import { Wifi, Car, Waves, Mountain, Coffee, Sparkles } from "lucide-react";
 
-const villaImages = Array.from({ length: 29 }, (_, i) => ({
+const villaImages = Array.from({ length: 14 }, (_, i) => ({
   src: `/images/Villa/villa${i + 1}.jpeg`,
   alt: `Villa image ${i + 1}`,
 }));
