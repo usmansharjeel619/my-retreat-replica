@@ -1,7 +1,6 @@
 import { Heart, MapPin, Calendar, Users, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "./CountdownTimer";
-import PhoneMockup from "./PhoneMockup";
 
 const HeroSection = () => {
   const retreatDate = new Date("2026-05-18T00:00:00");
@@ -17,115 +16,104 @@ const HeroSection = () => {
         }}
       />
 
-      <div className="relative z-10 container-wide section-padding">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Left: Content */}
-          <div className="text-center lg:text-left order-2 lg:order-1">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 animate-fade-in">
-              <Heart className="w-4 h-4" />
-              <span className="text-sm font-medium">Luxury Couples Experience</span>
-            </div>
+      <div className="relative z-10 container-wide section-padding text-center">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 animate-fade-in">
+          <Heart className="w-4 h-4" />
+          <span className="text-sm font-medium">Luxury Couples Experience</span>
+        </div>
 
-            {/* Main Heading */}
-            <h1
-              className="heading-xl mb-4 text-foreground animate-fade-in"
-              style={{ animationDelay: "0.1s" }}
-            >
-              Luxury Couples
-              <br />
-              <span className="text-gradient">Reconnection Retreat</span>
-            </h1>
+        {/* Main Heading */}
+        <h1
+          className="heading-xl mb-4 text-foreground animate-fade-in"
+          style={{ animationDelay: "0.1s" }}
+        >
+          Luxury Couples
+          <br />
+          <span className="text-gradient">Reconnection Retreat</span>
+        </h1>
 
-            {/* Subheading */}
-            <p
-              className="body-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8 animate-fade-in"
-              style={{ animationDelay: "0.2s" }}
-            >
-              7 Nights, 8 Days of Restoration
-              <br />
-              <span className="font-medium text-foreground">
-                All-Inclusive Experience
-              </span>
-            </p>
+        {/* Subheading */}
+        <p
+          className="body-lg text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in"
+          style={{ animationDelay: "0.2s" }}
+        >
+          6 Nighs, 7 Days of Restoration
+          <br />
+          <span className="font-medium text-foreground">
+            All-Inclusive Experience
+          </span>
+        </p>
 
-            {/* Info Pills */}
-            <div
-              className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 animate-fade-in"
-              style={{ animationDelay: "0.3s" }}
-            >
-              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-                <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">Marrakech, Morocco</span>
-              </div>
-              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-                <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">18-24 May 2026</span>
-              </div>
-              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-                <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">25-31 May 2026</span>
-              </div>
-              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-                <Users className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">Limited Spaces</span>
-              </div>
-            </div>
-
-            {/* Countdown Timer */}
-            <div
-              className="mb-8 animate-fade-in"
-              style={{ animationDelay: "0.4s" }}
-            >
-              <p className="text-sm text-muted-foreground uppercase tracking-wider mb-4">
-                Retreat Begins In
-              </p>
-              <CountdownTimer targetDate={retreatDate} />
-            </div>
-
-            {/* Price & CTA */}
-            <div
-              className="animate-fade-in flex flex-wrap justify-center lg:justify-start gap-4"
-              style={{ animationDelay: "0.5s" }}
-            >
-              <Button
-                size="lg"
-                className="text-lg px-8 py-6 rounded-full shadow-warm hover:shadow-glow transition-all duration-300 animate-pulse-glow"
-                asChild
-              >
-                <a
-                  href="https://calendly.com/luxe-retreat/20min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book Your Space
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-6 rounded-full border-primary/30 hover:bg-primary/10 transition-all duration-300"
-                asChild
-              >
-                <a
-                  href="https://wa.me/447521476846"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  WhatsApp Us
-                </a>
-              </Button>
-            </div>
+        {/* Info Pills */}
+        <div
+          className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in"
+          style={{ animationDelay: "0.3s" }}
+        >
+          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+            <MapPin className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium">
+              6 nights, 7 days Marrakech
+            </span>
           </div>
+          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+            <Calendar className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium">18-24 May 2026</span>
+          </div>
+          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+            <Calendar className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium">25-31 May 2026</span>
+          </div>
+          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+            <Users className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium">Limited Spaces</span>
+          </div>
+        </div>
 
-          {/* Right: Phone Mockup with Video */}
-          <div 
-            className="flex justify-center order-1 lg:order-2 animate-fade-in"
-            style={{ animationDelay: "0.3s" }}
+        {/* Countdown Timer */}
+        <div
+          className="mb-10 animate-fade-in"
+          style={{ animationDelay: "0.4s" }}
+        >
+          <p className="text-sm text-muted-foreground uppercase tracking-wider mb-4">
+            Retreat Begins In
+          </p>
+          <CountdownTimer targetDate={retreatDate} />
+        </div>
+
+        {/* Price & CTA */}
+        <div
+          className="animate-fade-in flex flex-wrap justify-center gap-4"
+          style={{ animationDelay: "0.5s" }}
+        >
+          <Button
+            size="lg"
+            className="text-lg px-8 py-6 rounded-full shadow-warm hover:shadow-glow transition-all duration-300 animate-pulse-glow"
+            asChild
           >
-            <PhoneMockup videoSrc="/videos/intro.mp4" />
-          </div>
+            <a
+              href="https://calendly.com/luxe-retreat/20min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book Your Space
+            </a>
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="text-lg px-8 py-6 rounded-full border-primary/30 hover:bg-primary/10 transition-all duration-300"
+            asChild
+          >
+            <a
+              href="https://wa.me/447521476846"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              WhatsApp Us
+            </a>
+          </Button>
         </div>
 
         {/* Scroll Indicator */}
