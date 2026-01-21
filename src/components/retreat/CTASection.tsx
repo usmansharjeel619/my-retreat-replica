@@ -17,12 +17,12 @@ const CTASection = () => {
         <Heart className="w-12 h-12 mx-auto mb-6 animate-pulse" />
 
         <h2 className="heading-lg mb-6 text-primary-foreground">
-          Ready to Transform Your Relationship?
+          Ready To Transform Your Life?
         </h2>
 
         <p className="body-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-          Limited spaces available for our May retreats in Marrakech. Don't wait
-          until it's too late – your relationship deserves this investment.
+          You can't put a price on your mental health. Men, it's time we
+          prioritise ourselves.
         </p>
 
         {/* Booking CTA */}
@@ -54,7 +54,7 @@ const CTASection = () => {
           <div className="flex items-center justify-center gap-2 mt-6 text-primary-foreground/70">
             <Calendar className="w-4 h-4" />
             <span className="text-sm">
-              18-24 May & 25-31 May 2026 • Marrakech
+              18-24 May, 25-31 May & 24-30 June 2026 • Marrakech
             </span>
           </div>
         </div>

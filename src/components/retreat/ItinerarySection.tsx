@@ -16,7 +16,7 @@ const itinerary = [
         time: "4:30 PM",
         activity: "Welcome to our Moroccan-Style Villa with Refreshments",
       },
-      { time: "5:30 PM", activity: "First Evening Welcome Dinner for Couples" },
+      { time: "5:30 PM", activity: "First evening  Welcome Group Dinner" },
       {
         time: "7:30 PM",
         activity: "Traditional Moroccan Fire Dancing Show at the Villa",
@@ -28,14 +28,14 @@ const itinerary = [
     day: "Day 2",
     title: "Morning Fitness & Desert Adventure",
     activities: [
-      { time: "8:00 AM", activity: "Morning Jog (Partner Edition)" },
+      { time: "8:00 AM", activity: "Morning Jog" },
       { time: "9:00 AM", activity: "Boxing Training" },
       { time: "10:30 AM", activity: "Breakfast" },
       {
         time: "12:00 PM",
-        activity: 'Group Counselling Workshop "Healing Together"',
+        activity: "Group Counselling Workshop",
       },
-      { time: "1:00 PM", activity: "Reflection time for couples" },
+      { time: "1:00 PM", activity: "Self Relfection time" },
       {
         time: "3:30 PM",
         activity: "Magical Dinner Show & Camel Ride in Agafay Desert at sunset",
@@ -49,7 +49,7 @@ const itinerary = [
     activities: [
       { time: "8:00 AM", activity: "Pilates" },
       { time: "9:00 AM", activity: "Breakfast" },
-      { time: "10:30 AM", activity: "Outdoor Walk for Two" },
+      { time: "10:30 AM", activity: "Outdoor Walk" },
       {
         time: "12:00 PM",
         activity: "Nutrition Workshop (Mindful Eating & Shared Wellness)",
@@ -61,7 +61,7 @@ const itinerary = [
       },
       {
         time: "5:00 PM",
-        activity: 'Couples Counselling Topic "The Art of Emotional Honesty"',
+        activity: "Mental Health Workshop",
       },
       { time: "6:00 PM", activity: "Partner HIIT Training" },
       { time: "7:30 PM", activity: "Dinner" },
@@ -109,7 +109,7 @@ const itinerary = [
       },
       { time: "3:00 PM", activity: "Water Park" },
       { time: "6:00 PM", activity: "Pool Party with Live DJ" },
-      { time: "9:00 PM", activity: "Couples Reflection Night" },
+      { time: "9:00 PM", activity: "Couples Games Night" },
     ],
   },
   {

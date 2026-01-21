@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 const pricingTiers = [
   {
-    name: "Double Bed Room",
+    name: "Shared Room",
     description: "En-suite",
-    price: "£3,000",
+    price: "£1,600",
     priceNote: "per couple",
     features: [
       "Majority of retreat activities included",
@@ -17,15 +17,14 @@ const pricingTiers = [
     popular: false,
   },
   {
-    name: "Sea View Double Bed Room",
+    name: "Double Bed Room",
     description: "Premium en-suite with stunning views",
-    price: "£3,500",
+    price: "£2,000",
     priceNote: "per couple",
     features: [
       "All retreat activities included",
       "Full meal plan",
       "Private 1-to-1 counselling",
-      "Beautiful sea views",
       "En-suite bathroom",
       "Transport included",
       "Priority booking",
