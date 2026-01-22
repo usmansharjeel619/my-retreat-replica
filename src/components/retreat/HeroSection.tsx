@@ -2,7 +2,11 @@ import { Heart, MapPin, Calendar, Users, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "./CountdownTimer";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  isCouplesMode: boolean;
+}
+
+const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
   const retreatDate = new Date("2026-05-18T00:00:00");
 
   return (
@@ -20,7 +24,11 @@ const HeroSection = () => {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 animate-fade-in">
           <Heart className="w-4 h-4" />
-          <span className="text-sm font-medium">Luxury Couples Experience</span>
+          <span className="text-sm font-medium">
+            {isCouplesMode
+              ? "Luxury Couples Experience"
+              : "Men Retreat Experience"}
+          </span>
         </div>
 
         {/* Main Heading */}
@@ -28,9 +36,19 @@ const HeroSection = () => {
           className="heading-xl mb-4 text-foreground animate-fade-in"
           style={{ animationDelay: "0.1s" }}
         >
-          Luxury Couples
-          <br />
-          <span className="text-gradient">Reconnection Retreat</span>
+          {isCouplesMode ? (
+            <>
+              Luxury Couples
+              <br />
+              <span className="text-gradient">Reconnection Retreat</span>
+            </>
+          ) : (
+            <>
+              Men Retreat
+              <br />
+              <span className="text-gradient">Experience</span>
+            </>
+          )}
         </h1>
 
         {/* Subheading */}
@@ -60,17 +78,21 @@ const HeroSection = () => {
             <Calendar className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium">18-24 May 2026</span>
           </div>
-          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-            <Calendar className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">25-31 May 2026</span>
-          </div>
+          {isCouplesMode && (
+            <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+              <Calendar className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium">25-31 May 2026</span>
+            </div>
+          )}
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Calendar className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium">24-30 June 2026</span>
           </div>
           <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Users className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Limited Spaces</span>
+            <span className="text-sm font-medium">
+              {isCouplesMode ? "Limited Spaces" : "5 Spaces Left"}
+            </span>
           </div>
         </div>
 

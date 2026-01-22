@@ -1,28 +1,43 @@
-import { Button } from "@/components/ui/button";
 import { Heart, Phone, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-const CTASection = () => {
+interface CTASectionProps {
+  isCouplesMode: boolean;
+}
+
+const CTASection = ({ isCouplesMode }: CTASectionProps) => {
   return (
-    <section
-      id="booking"
-      className="section-padding bg-gradient-to-br from-primary to-accent text-primary-foreground overflow-hidden relative"
-    >
-      {/* Decorative elements */}
+    <section className="section-padding bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground relative overflow-hidden">
+      {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-primary-foreground blur-3xl" />
-        <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-primary-foreground blur-3xl" />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        />
       </div>
 
-      <div className="container-narrow relative z-10 text-center">
+      <div className="relative z-10 container-wide text-center">
         <Heart className="w-12 h-12 mx-auto mb-6 animate-pulse" />
-
         <h2 className="heading-lg mb-6 text-primary-foreground">
-          Ready To Transform Your Life?
+          {isCouplesMode
+            ? "Ready to Transform Your Relationship?"
+            : "Ready To Transform Your Life?"}
         </h2>
-
         <p className="body-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-          You can't put a price on your mental health. Men, it's time we
-          prioritise ourselves.
+          {isCouplesMode ? (
+            <>
+              Limited spaces available for our May retreats in Marrakech. Don't
+              wait until it's too late – your relationship deserves this
+              investment.
+            </>
+          ) : (
+            <>
+              You can't put a price on your mental health. Men, it's time we
+              prioritise ourselves.
+            </>
+          )}
         </p>
 
         {/* Booking CTA */}
@@ -54,7 +69,9 @@ const CTASection = () => {
           <div className="flex items-center justify-center gap-2 mt-6 text-primary-foreground/70">
             <Calendar className="w-4 h-4" />
             <span className="text-sm">
-              18-24 May, 25-31 May & 24-30 June 2026 • Marrakech
+              {isCouplesMode
+                ? "18-24 May, 25-31 May & 24-30 June 2026 • Marrakech"
+                : "18-24 May & 24-30 June 2026 • Marrakech"}
             </span>
           </div>
         </div>

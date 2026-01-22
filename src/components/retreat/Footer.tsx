@@ -6,95 +6,145 @@ const TikTokIcon = () => (
   </svg>
 );
 
-const Footer = () => {
+interface FooterProps {
+  isCouplesMode: boolean;
+}
+
+const Footer = ({ isCouplesMode }: FooterProps) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground text-background py-12 px-4">
-      <div className="container-wide">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img
-              src="/images/logo.png"
-              alt="Luxe Retreats"
-              className="h-10 w-auto brightness-0 invert"
-            />
+    <footer className="bg-secondary/30 border-t border-border">
+      <div className="container-wide py-12">
+        {/* Main Footer Content */}
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
+          {/* Brand */}
+          <div className="md:col-span-2">
+            <h3 className="text-xl font-serif font-bold mb-4">
+              {isCouplesMode
+                ? "Luxe Couples Reconnection Retreat"
+                : "Men Retreat Experience"}
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              Transform your relationship through healing, connection, and
+              adventure in the heart of Morocco.
+            </p>
+            {/* Social Links */}
+            <div className="flex gap-4">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://tiktok.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              >
+                <TikTokIcon />
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
-          {/* Links */}
-          <nav className="flex flex-wrap justify-center gap-6 text-sm text-background/70">
-            <a
-              href="#itinerary"
-              className="hover:text-primary transition-colors"
-            >
-              Itinerary
-            </a>
-            <a href="#pricing" className="hover:text-primary transition-colors">
-              Pricing
-            </a>
-            <a
-              href="#accommodation"
-              className="hover:text-primary transition-colors"
-            >
-              Accommodation
-            </a>
-            <a href="#faq" className="hover:text-primary transition-colors">
-              FAQ
-            </a>
-            <a href="#booking" className="hover:text-primary transition-colors">
-              Book Now
-            </a>
-          </nav>
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="#why"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Why This Retreat
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#itinerary"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Itinerary
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          {/* Social */}
-          <div className="flex items-center gap-4">
-            <a
-              href="https://www.instagram.com/luxe.retreat?igsh=Nm1wZHg3NzU2em10&utm_source=qr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="https://www.facebook.com/share/19z7YUxSnc/?mibextid=wwXIfr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a
-              href="https://www.tiktok.com/@luxe.retreat.coun?_r=1&_t=ZN-92hkWrqVjFO"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-              aria-label="TikTok"
-            >
-              <TikTokIcon />
-            </a>
-            <a
-              href="https://youtube.com/@rabimushiya-u4m?si=KEpJDSWGk26cO1pI"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-              aria-label="YouTube"
-            >
-              <Youtube className="w-5 h-5" />
-            </a>
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2 text-muted-foreground">
+                <Mail className="w-4 h-4" />
+                <a
+                  href="mailto:hello@luxe-retreat.com"
+                  className="hover:text-primary transition-colors"
+                >
+                  hello@luxe-retreat.com
+                </a>
+              </li>
+              <li className="text-muted-foreground">
+                <a
+                  href="https://wa.me/447521476846"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  WhatsApp: +44 7521 476846
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-background/10 mt-8 pt-8 text-center text-sm text-background/50">
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
           <p>
-            © {currentYear} Luxe Couples Reconnection Retreat. All rights
-            reserved.
+            © {currentYear}{" "}
+            {isCouplesMode
+              ? "Luxe Couples Reconnection Retreat"
+              : "Men Retreat Experience"}
+            . All rights reserved.
           </p>
           <p className="mt-2">
-            Marrakech • 18-24 May, 25-31 May & 24-30 June 2026
+            {isCouplesMode
+              ? "Marrakech • 18-24 May, 25-31 May & 24-30 June 2026"
+              : "Marrakech • 18-24 May & 24-30 June 2026"}
           </p>
         </div>
       </div>
