@@ -21,9 +21,11 @@ const CTASection = ({ isCouplesMode }: CTASectionProps) => {
       <div className="relative z-10 container-wide text-center">
         <Heart className="w-12 h-12 mx-auto mb-6 animate-pulse" />
         <h2 className="heading-lg mb-6 text-primary-foreground">
-          {isCouplesMode
-            ? "Ready to Transform Your Relationship?"
-            : "Ready To Transform Your Life?"}
+          {isCouplesMode ? (
+            "Ready to Transform Your Relationship?"
+          ) : (
+            "Ready To Transform Your Life?"
+          )}
         </h2>
         <p className="body-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
           {isCouplesMode ? (
@@ -56,13 +58,17 @@ const CTASection = ({ isCouplesMode }: CTASectionProps) => {
             asChild
           >
             <a
-              href="https://calendly.com/luxe-retreat/20min"
+              href={
+                isCouplesMode
+                  ? "https://buy.stripe.com/9B65kEgryeasadN3refjG0s"
+                  : "https://buy.stripe.com/dRmaEY5MU5DW3Pp3refjG0r"
+              }
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              Book a Call
+              Reserve Now
             </a>
           </Button>
 
@@ -70,7 +76,7 @@ const CTASection = ({ isCouplesMode }: CTASectionProps) => {
             <Calendar className="w-4 h-4" />
             <span className="text-sm">
               {isCouplesMode
-                ? "18-24 May, 25-31 May & 24-30 June 2026 • Marrakech"
+                ? " 25-31 May 2026 • Marrakech"
                 : "18-24 May & 24-30 June 2026 • Marrakech"}
             </span>
           </div>

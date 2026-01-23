@@ -68,32 +68,46 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
           className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in"
           style={{ animationDelay: "0.3s" }}
         >
-          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-            <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">
-              6 nights, 7 days Marrakech
-            </span>
-          </div>
-          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-            <Calendar className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">18-24 May 2026</span>
-          </div>
-          {isCouplesMode && (
-            <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-              <Calendar className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium">25-31 May 2026</span>
-            </div>
+          {!isCouplesMode && (
+            <>
+              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+                <MapPin className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">
+                  6 nights, 7 days Marrakech
+                </span>
+              </div>
+              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+                <Calendar className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">18-24 May 2026</span>
+              </div>
+              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+                <Calendar className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">24-30 June 2026</span>
+              </div>
+              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+                <Users className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">5 Spaces Left</span>
+              </div>
+            </>
           )}
-          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-            <Calendar className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">24-30 June 2026</span>
-          </div>
-          <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-            <Users className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">
-              {isCouplesMode ? "Limited Spaces" : "5 Spaces Left"}
-            </span>
-          </div>
+          {isCouplesMode && (
+            <>
+              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+                <MapPin className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">
+                  6 nights, 7 days Marrakech
+                </span>
+              </div>
+              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+                <Calendar className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">25-31 May 2026</span>
+              </div>
+              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
+                <Users className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">Limited Spaces</span>
+              </div>
+            </>
+          )}
         </div>
 
         {/* Countdown Timer */}
@@ -118,7 +132,11 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
             asChild
           >
             <a
-              href="https://calendly.com/luxe-retreat/20min"
+              href={
+                isCouplesMode
+                  ? "https://buy.stripe.com/9B65kEgryeasadN3refjG0s"
+                  : "https://buy.stripe.com/dRmaEY5MU5DW3Pp3refjG0r"
+              }
               target="_blank"
               rel="noopener noreferrer"
             >

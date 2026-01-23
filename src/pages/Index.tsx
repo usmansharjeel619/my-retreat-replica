@@ -21,27 +21,31 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
 
-      {/* Toggle Button */}
-      <div className="fixed top-20 right-4 z-50">
-        <div className="bg-card border border-border rounded-full p-1 shadow-lg flex gap-1">
-          <Button
-            variant={isCouplesMode ? "default" : "ghost"}
-            size="sm"
-            onClick={() => setIsCouplesMode(true)}
-            className="rounded-full px-4"
-          >
-            <Users className="w-4 h-4 mr-2" />
-            Couples
-          </Button>
-          <Button
-            variant={!isCouplesMode ? "default" : "ghost"}
-            size="sm"
-            onClick={() => setIsCouplesMode(false)}
-            className="rounded-full px-4"
-          >
-            <User className="w-4 h-4 mr-2" />
-            Men
-          </Button>
+      {/* Toggle Button - Centered at top */}
+      <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50">
+        <div className="bg-card/95 backdrop-blur-sm border border-border rounded-full p-1 shadow-warm">
+          <div className="flex gap-1">
+            <button
+              onClick={() => setIsCouplesMode(false)}
+              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                !isCouplesMode
+                  ? "bg-primary text-primary-foreground shadow-md"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Men's Retreat
+            </button>
+            <button
+              onClick={() => setIsCouplesMode(true)}
+              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                isCouplesMode
+                  ? "bg-primary text-primary-foreground shadow-md"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Couples Retreat
+            </button>
+          </div>
         </div>
       </div>
 

@@ -252,7 +252,7 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
         {
           time: "9:00 AM",
           activity:
-            'Reflection Workshop "Our Healing Journey & Future Together"',
+            'Reflection Workshop "Our Healing Journey & changes of the future you"',
         },
         { time: "10:30 AM", activity: "Breakfast" },
         { time: "12:00 PM", activity: "Departure" },

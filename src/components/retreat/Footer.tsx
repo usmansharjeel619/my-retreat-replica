@@ -112,10 +112,10 @@ const Footer = ({ isCouplesMode }: FooterProps) => {
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
                 <a
-                  href="mailto:hello@luxe-retreat.com"
+                  href="mailto:luxe-retreat@outlook.com"
                   className="hover:text-primary transition-colors"
                 >
-                  hello@luxe-retreat.com
+                  luxe-retreat@outlook.com
                 </a>
               </li>
               <li className="text-muted-foreground">
@@ -143,7 +143,7 @@ const Footer = ({ isCouplesMode }: FooterProps) => {
           </p>
           <p className="mt-2">
             {isCouplesMode
-              ? "Marrakech • 18-24 May, 25-31 May & 24-30 June 2026"
+              ? "Marrakech • 25-31 May 2026"
               : "Marrakech • 18-24 May & 24-30 June 2026"}
           </p>
         </div>

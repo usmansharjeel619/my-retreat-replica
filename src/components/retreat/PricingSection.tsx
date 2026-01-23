@@ -12,6 +12,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       description: "En-suite",
       price: "£3,000",
       priceNote: "per couple",
+      paymentLink: "https://buy.stripe.com/9B65kEgryeasadN3refjG0s",
       features: [
         "Majority of retreat activities included",
         "Full meal plan",
@@ -26,6 +27,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       description: "Premium en-suite with stunning views",
       price: "£3,500",
       priceNote: "per couple",
+      paymentLink: "https://buy.stripe.com/9B65kEgryeasadN3refjG0s",
       features: [
         "All retreat activities included",
         "Full meal plan",
@@ -41,6 +43,8 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       name: "Private Room",
       description: "Based on availability and request",
       price: "Enquire",
+      priceNote: "",
+      paymentLink: "https://buy.stripe.com/9B65kEgryeasadN3refjG0s",
       features: [
         "All retreat activities included",
         "Full meal plan",
@@ -59,6 +63,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       description: "En-suite",
       price: "£1,600",
       priceNote: "per person",
+      paymentLink: "https://buy.stripe.com/dRmaEY5MU5DW3Pp3refjG0r",
       features: [
         "Majority of retreat activities included",
         "Full meal plan",
@@ -73,6 +78,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       description: "Premium en-suite with stunning views",
       price: "£2,000",
       priceNote: "per person",
+      paymentLink: "https://buy.stripe.com/dRmaEY5MU5DW3Pp3refjG0r",
       features: [
         "All retreat activities included",
         "Full meal plan",
@@ -85,8 +91,10 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     },
     {
       name: "Private Room",
-    description: "Based on availability and request",
-    price: "Enquire",
+      description: "Based on availability and request",
+      price: "Enquire",
+      priceNote: "",
+      paymentLink: "https://buy.stripe.com/dRmaEY5MU5DW3Pp3refjG0r",
       features: [
         "All retreat activities included",
         "Full meal plan",
@@ -144,9 +152,11 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
                     {tier.price}
                   </span>
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  {tier.priceNote}
-                </p>
+                {tier.priceNote && (
+                  <p className="text-sm text-muted-foreground">
+                    {tier.priceNote}
+                  </p>
+                )}
               </div>
 
               <ul className="space-y-3 mb-8">
@@ -171,7 +181,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
                 asChild
               >
                 <a
-                  href="https://calendly.com/luxe-retreat/20min"
+                  href={tier.paymentLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
