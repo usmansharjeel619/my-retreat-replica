@@ -7,7 +7,10 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
-  const retreatDate = new Date("2026-05-18T00:00:00");
+  // Couples retreat: 1-8 Sep 2026 (8 nights, 7 days)
+  const retreatDate = isCouplesMode
+    ? new Date("2026-09-01T00:00:00")
+    : new Date("2026-06-24T00:00:00"); // Men retreat: 24-30 June 2026
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -56,7 +59,9 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
           className="body-lg text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in"
           style={{ animationDelay: "0.2s" }}
         >
-          6 Nights, 7 Days of Restoration
+          {isCouplesMode
+            ? "8 Nights, 7 Days of Restoration"
+            : "6 Nights, 7 Days of Restoration"}
           <br />
           <span className="font-medium text-foreground">
             All-Inclusive Experience
@@ -78,10 +83,6 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">18-24 May 2026</span>
-              </div>
-              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-                <Calendar className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">24-30 June 2026</span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
@@ -95,12 +96,12 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  6 nights, 7 days Marrakech
+                  8 nights, 7 days Marrakech
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">25-31 May 2026</span>
+                <span className="text-sm font-medium">1-8 Sep 2026</span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Users className="w-4 h-4 text-primary" />
@@ -140,7 +141,7 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book Your Space
+              Book Your Place
             </a>
           </Button>
           <Button
