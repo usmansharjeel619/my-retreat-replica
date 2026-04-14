@@ -9,7 +9,7 @@ interface HeroSectionProps {
 const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
   const retreatDate = isCouplesMode
     ? new Date("2026-09-01T00:00:00")
-    : new Date("2026-05-18T00:00:00");
+    : new Date("2026-06-24T00:00:00");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -79,10 +79,6 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
                 <span className="text-sm font-medium">
                   6 nights, 7 days Marrakech
                 </span>
-              </div>
-              <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
-                <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">18-30 May 2026</span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
