@@ -8,8 +8,8 @@ interface HeroSectionProps {
 
 const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
   const retreatDate = isCouplesMode
-    ? new Date("2026-09-01T00:00:00")
-    : new Date("2026-06-24T00:00:00");
+    ? new Date("2026-12-06T00:00:00")
+    : new Date("2026-12-26T00:00:00");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -59,8 +59,8 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
           style={{ animationDelay: "0.2s" }}
         >
           {isCouplesMode
-            ? "8 Nights, 7 Days of Restoration"
-            : "6 Nights, 7 Days of Restoration"}
+            ? "5 Nights, 6 Days of Restoration"
+            : "5 Nights, 6 Days of Restoration"}
           <br />
           <span className="font-medium text-foreground">
             All-Inclusive Experience
@@ -82,11 +82,11 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">24-30 June 2026</span>
+                <span className="text-sm font-medium">26-31 December 2026</span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Users className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">5 Spaces Left</span>
+                <span className="text-sm font-medium">6 Spaces Only</span>
               </div>
             </>
           )}
@@ -95,12 +95,12 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  8 nights, 7 days Marrakech
+                  5 nights, 6 days Marrakech
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">1-8 Sep 2026</span>
+                <span className="text-sm font-medium">6-11 December 2026</span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Users className="w-4 h-4 text-primary" />

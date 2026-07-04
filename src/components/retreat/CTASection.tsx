@@ -30,8 +30,8 @@ const CTASection = ({ isCouplesMode }: CTASectionProps) => {
         <p className="body-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
           {isCouplesMode ? (
             <>
-              Limited spaces available for our May retreats in Marrakech. Don't
-              wait until it's too late – your relationship deserves this
+              Limited spaces available for our December retreat in Marrakech.
+              Don't wait until it's too late – your relationship deserves this
               investment.
             </>
           ) : (
@@ -76,8 +76,8 @@ const CTASection = ({ isCouplesMode }: CTASectionProps) => {
             <Calendar className="w-4 h-4" />
             <span className="text-sm">
               {isCouplesMode
-                ? " 25-31 May 2026 • Marrakech"
-                : " 24-30 June 2026 • Marrakech"}
+                ? " 6-11 December 2026 • Marrakech"
+                : " 26-31 December 2026 • Marrakech"}
             </span>
           </div>
         </div>

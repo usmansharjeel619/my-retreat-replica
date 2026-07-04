@@ -1,16 +1,4 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { Wifi, Car, Waves, Mountain, Coffee, Sparkles } from "lucide-react";
-
-const villaImages = Array.from({ length: 14 }, (_, i) => ({
-  src: `/images/Villa/villa${i + 1}.jpeg`,
-  alt: `Villa image ${i + 1}`,
-}));
 
 const activityImages = Array.from({ length: 15 }, (_, i) => ({
   src: `/images/Activity/${i + 1}.jpeg`,
@@ -32,25 +20,19 @@ const AccommodationSection = () => {
       <div className="container-wide">
         {/* Villa Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          {/* Gallery */}
+          {/* Video */}
           <div>
-            <Carousel opts={{ loop: true }} className="w-full">
-              <CarouselContent>
-                {villaImages.map((image, index) => (
-                  <CarouselItem key={index}>
-                    <div className="overflow-hidden rounded-3xl">
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-[300px] md:h-[400px] object-cover hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-4 bg-card/80 backdrop-blur-sm border-primary/20" />
-              <CarouselNext className="right-4 bg-card/80 backdrop-blur-sm border-primary/20" />
-            </Carousel>
+            <div className="overflow-hidden rounded-3xl shadow-warm">
+              <video
+                width="100%"
+                height="400"
+                controls
+                className="w-full h-[300px] md:h-[400px] object-cover bg-black"
+              >
+                <source src="/videos/villa-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
 
           {/* Content */}

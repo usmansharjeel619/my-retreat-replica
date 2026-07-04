@@ -38,7 +38,15 @@ const testimonials = [
   },
 ];
 
-const reviewVideos = ["/videos/review1.mp4", "/videos/review2.mp4"];
+const reviewVideos = [
+  "/videos/review1.mp4",
+  "/videos/review2.mp4",
+  "/videos/review3.mp4",
+  "/videos/review4.mp4",
+  "/videos/review5.mp4",
+  "/videos/review6.mp4",
+  "/videos/review7.mp4",
+];
 
 const TestimonialsSection = () => {
   return (
@@ -56,24 +64,37 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Video Reviews */}
-        <div className="flex flex-col md:flex-row justify-center gap-6 mb-16">
-          {reviewVideos.map((video, index) => (
-            <div
-              key={index}
-              className="relative rounded-2xl overflow-hidden shadow-luxury max-w-[280px] mx-auto md:mx-0"
-            >
-              <video
-                src={video}
-                controls
-                playsInline
-                className="w-full h-auto aspect-[9/16] object-cover bg-black"
-                poster=""
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full mb-16"
+        >
+          <CarouselContent className="-ml-4">
+            {reviewVideos.map((video, index) => (
+              <CarouselItem
+                key={index}
+                className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
               >
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          ))}
-        </div>
+                <div className="relative overflow-hidden rounded-2xl shadow-luxury bg-black">
+                  <video
+                    src={video}
+                    controls
+                    playsInline
+                    className="w-full aspect-[9/16] object-cover"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-center gap-4 mt-8">
+            <CarouselPrevious className="static translate-y-0 bg-card border-primary/20 hover:bg-primary hover:text-primary-foreground" />
+            <CarouselNext className="static translate-y-0 bg-card border-primary/20 hover:bg-primary hover:text-primary-foreground" />
+          </div>
+        </Carousel>
 
         {/* Carousel */}
         <Carousel
