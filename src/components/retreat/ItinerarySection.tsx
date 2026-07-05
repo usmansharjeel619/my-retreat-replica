@@ -105,24 +105,6 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
     },
     {
       day: "Day 6",
-      title: "Training, Water Park & Rebuilding Trust",
-      activities: [
-        { time: "8:30 AM", activity: "Circuit Training" },
-        { time: "9:00 AM", activity: "Swimming" },
-        { time: "10:00 AM", activity: "Breakfast" },
-        { time: "11:30 AM", activity: "Bike Ride" },
-        { time: "12:30 PM", activity: "Rest & Digest" },
-        {
-          time: "1:30 PM",
-          activity: 'Topic of the Day "Rebuilding Trust After Pain"',
-        },
-        { time: "3:00 PM", activity: "Water Park" },
-        { time: "6:00 PM", activity: "Pool Party with Live DJ" },
-        { time: "9:00 PM", activity: "Couples Reflection Night" },
-      ],
-    },
-    {
-      day: "Day 7",
       title: "Reflection & Departure",
       activities: [
         { time: "8:00 AM", activity: "Swimming" },

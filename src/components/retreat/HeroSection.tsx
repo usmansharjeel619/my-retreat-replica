@@ -77,7 +77,7 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  6 nights, 7 days Marrakech
+                  5 nights, 6 days Marrakech
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
