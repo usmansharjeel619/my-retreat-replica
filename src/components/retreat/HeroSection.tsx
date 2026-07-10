@@ -8,8 +8,8 @@ interface HeroSectionProps {
 
 const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
   const retreatDate = isCouplesMode
-    ? new Date("2026-12-06T00:00:00")
-    : new Date("2026-11-26T00:00:00");
+    ? new Date("2027-03-25T00:00:00")
+    : new Date("2026-12-10T00:00:00");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -83,7 +83,7 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  26 November - 1 December 2026
+                  10-16 December 2026
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
@@ -102,7 +102,7 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">6-11 December 2026</span>
+                <span className="text-sm font-medium">25-31 March 2027</span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Users className="w-4 h-4 text-primary" />

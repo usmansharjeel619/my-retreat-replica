@@ -25,7 +25,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     {
       name: "Double Bed Room",
       description: "En-suite",
-      price: "£3,000",
+      price: "£4,000",
       priceNote: "per couple",
       paymentLink: "https://buy.stripe.com/9B65kEgryeasadN3refjG0s",
       features: [
