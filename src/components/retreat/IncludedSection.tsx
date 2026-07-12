@@ -16,7 +16,7 @@ import {
 const inclusions = [
   {
     icon: Bed,
-    title: "6 Nighs Accommodation",
+    title: "6 Nights Accommodation",
     description: "Luxury villa stay",
   },
   {
@@ -24,7 +24,11 @@ const inclusions = [
     title: "Daily Nourishment",
     description: "Wholesome homemade meals",
   },
-  { icon: Mountain, title: "Go Karting", description: "Adventure activity" },
+  {
+    icon: Mountain,
+    title: "Aqua Kart + Go Karting",
+    description: "Fun day out",
+  },
   {
     icon: Bike,
     title: "Camel Riding & Bike Rides",
@@ -33,6 +37,11 @@ const inclusions = [
   { icon: Dumbbell, title: "Quad Bike", description: "Thrilling experience" },
   { icon: Waves, title: "Ice Bath", description: "Wellness recovery" },
   { icon: Flame, title: "BBQ", description: "Evening social dining" },
+  {
+    icon: Waves,
+    title: "Beach Club Day Out",
+    description: "Poolside relaxation",
+  },
   {
     icon: Gamepad2,
     title: "Games Night",
@@ -48,7 +57,7 @@ const inclusions = [
   { icon: Car, title: "Transport", description: "Pick up & drop off" },
 ];
 
-const extras = ["Massage", "Eating Outside", "Aqua kart", "Jet ski"];
+const extras = ["Massage", "Eating Outside", "Jet ski"];
 
 const IncludedSection = () => {
   return (

@@ -66,9 +66,9 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
 
   const menPricingTiers: PricingTier[] = [
     {
-      name: "5 Nights Shared Room",
+      name: "6 Nights Shared Room",
       description: "En-suite, shared accommodation",
-      price: "£1,300",
+      price: "£1,400",
       priceNote: "per person",
       paymentLink: "https://buy.stripe.com/cNifZi1wEeaseu35zmfjG0v",
       features: [
@@ -88,14 +88,14 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       ],
     },
     {
-      name: "6 Days Private Room",
+      name: "6 nights Private Room",
       description: "Private en-suite room",
-      price: "£1,800",
+      price: "£2,000",
       priceNote: "per person",
       paymentLink: "https://buy.stripe.com/6oUdRafnufewfy74vifjG0u",
       features: [
         "All retreat activities included",
-        "Full meal plan",
+        "Full meal plan", 
         "Private 1-to-1 counselling",
         "Complete privacy",
         "Transport included",

@@ -105,6 +105,23 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
     },
     {
       day: "Day 6",
+      title: "Beach Club Day Out",
+      activities: [
+        { time: "8:00 AM", activity: "Morning Jog" },
+        { time: "8:30 AM", activity: "Boxing Circuit" },
+        { time: "9:30 AM", activity: "Breakfast" },
+        { time: "10:00 AM", activity: "Group Walk" },
+        { time: "11:00 AM", activity: "Shower and Get Ready" },
+        { time: "12:00 PM", activity: "Couples Group Counselling" },
+        { time: "2:00 PM", activity: "Lunch" },
+        { time: "2:30 PM", activity: "Self Reflection" },
+        { time: "3:30 PM", activity: "Beach Club" },
+        { time: "8:00 PM", activity: "Dinner" },
+        { time: "9:00 PM", activity: "Games Night" },
+      ],
+    },
+    {
+      day: "Day 7",
       title: "Reflection & Departure",
       activities: [
         { time: "8:00 AM", activity: "Swimming" },
@@ -210,6 +227,23 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
     },
     {
       day: "Day 6",
+      title: "Fun Day Out",
+      activities: [
+        { time: "8:00 AM", activity: "Morning Jog" },
+        { time: "8:30 AM", activity: "Boxing Circuit" },
+        { time: "9:30 AM", activity: "Breakfast" },
+        { time: "10:00 AM", activity: "Group Walk" },
+        { time: "11:00 AM", activity: "Shower and Get Ready" },
+        { time: "12:00 PM", activity: "Group Counselling" },
+        { time: "2:00 PM", activity: "Lunch" },
+        { time: "2:30 PM", activity: "Self Reflection" },
+        { time: "3:30 PM", activity: "Aqua Kart + Go Karting" },
+        { time: "8:00 PM", activity: "Dinner" },
+        { time: "9:00 PM", activity: "Games Night" },
+      ],
+    },
+    {
+      day: "Day 7",
       title: "Reflection & Departure",
       activities: [
         { time: "8:00 AM", activity: "Swimming" },
@@ -232,7 +266,7 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="heading-lg mb-6">
-            Your <span className="text-gradient">6-Day Journey</span>
+            Your <span className="text-gradient">7-Day Journey</span>
           </h2>
           <p className="body-lg text-muted-foreground">
             Every day is carefully designed to balance healing, adventure, and
