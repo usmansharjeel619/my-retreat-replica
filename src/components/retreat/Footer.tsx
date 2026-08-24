@@ -144,7 +144,7 @@ const Footer = ({ isCouplesMode }: FooterProps) => {
           <p className="mt-2">
             {isCouplesMode
               ? "Marrakech • 25-31 March 2027"
-              : "Marrakech • 10-16 December 2026"}
+              : "Marrakech • 23-29 April 2027"}
           </p>
         </div>
       </div>

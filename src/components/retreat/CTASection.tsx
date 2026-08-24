@@ -77,7 +77,7 @@ const CTASection = ({ isCouplesMode }: CTASectionProps) => {
             <span className="text-sm">
               {isCouplesMode
                 ? " 25-31 March 2027 • Marrakech"
-                : " 10-16 December 2026 • Marrakech"}
+                : " 23-29 April 2027 • Marrakech"}
             </span>
           </div>
         </div>
