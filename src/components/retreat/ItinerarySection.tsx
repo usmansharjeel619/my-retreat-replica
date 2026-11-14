@@ -266,7 +266,7 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="heading-lg mb-6">
-            Your <span className="text-gradient">7-Day Journey</span>
+            Your <span className="text-gradient">4-Day Journey</span>
           </h2>
           <p className="body-lg text-muted-foreground">
             Every day is carefully designed to balance healing, adventure, and

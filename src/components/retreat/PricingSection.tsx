@@ -66,7 +66,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
 
   const menPricingTiers: PricingTier[] = [
     {
-      name: "6 Nights Shared Room",
+      name: "3 Nights Shared Room",
       description: "En-suite, shared accommodation",
       price: "£1,400",
       priceNote: "per person",
@@ -88,7 +88,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       ],
     },
     {
-      name: "6 nights Private Room",
+      name: "3 nights Private Room",
       description: "Private en-suite room",
       price: "£2,000",
       priceNote: "per person",

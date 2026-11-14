@@ -16,7 +16,7 @@ import {
 const inclusions = [
   {
     icon: Bed,
-    title: "6 Nights Accommodation",
+    title: "3 Nights Accommodation",
     description: "Luxury villa stay",
   },
   {

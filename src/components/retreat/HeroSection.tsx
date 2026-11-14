@@ -59,8 +59,8 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
           style={{ animationDelay: "0.2s" }}
         >
           {isCouplesMode
-            ? "6 Nights, 7 Days of Restoration"
-            : "6 Nights, 7 Days of Restoration"}
+            ? "3 Nights, 4 Days of Restoration"
+            : "3 Nights, 4 Days of Restoration"}
           <br />
           <span className="font-medium text-foreground">
             All-Inclusive Experience
@@ -77,7 +77,7 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  6 nights, 7 days Marrakech
+                  3 nights, 4 days Marrakech
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
@@ -97,7 +97,7 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  6 nights, 7 days Marrakech
+                  3 nights, 4 days Marrakech
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
