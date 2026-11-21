@@ -1,4 +1,4 @@
-import { Check, ChevronLeft, ChevronRight } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight, Zap } from "lucide-react";
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -11,6 +11,8 @@ type PricingTier = {
   name: string;
   description: string;
   price: string;
+  wasPrice?: string;
+  saving?: string;
   priceNote: string;
   paymentLink: string;
   features: string[];
@@ -25,7 +27,9 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     {
       name: "Double Bed Room",
       description: "En-suite",
-      price: "£4,000",
+      price: "£1,000",
+      wasPrice: "£1,500",
+      saving: "Save £500",
       priceNote: "per couple",
       paymentLink: "https://buy.stripe.com/9B65kEgryeasadN3refjG0s",
       features: [
@@ -68,7 +72,9 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     {
       name: "3 Nights Shared Room",
       description: "En-suite, shared accommodation",
-      price: "£1,400",
+      price: "£800",
+      wasPrice: "£1,000",
+      saving: "Save £200",
       priceNote: "per person",
       paymentLink: "https://buy.stripe.com/cNifZi1wEeaseu35zmfjG0v",
       features: [
@@ -90,7 +96,9 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     {
       name: "3 nights Private Room",
       description: "Private en-suite room",
-      price: "£2,000",
+      price: "£1,200",
+      wasPrice: "£1,300",
+      saving: "Save £100",
       priceNote: "per person",
       paymentLink: "https://buy.stripe.com/6oUdRafnufewfy74vifjG0u",
       features: [
@@ -119,6 +127,10 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     <section id="pricing" className="section-padding bg-secondary/20">
       <div className="container-wide">
         <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 bg-black text-white px-5 py-2 rounded-full text-sm font-bold tracking-wide mb-6">
+            <Zap className="w-4 h-4 text-yellow-400" />
+            BLACK FRIDAY — Limited-Time Prices
+          </div>
           <h2 className="heading-lg mb-6">
             Investment in Your <span className="text-gradient">Future</span>
           </h2>
@@ -227,11 +239,27 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
                   <p className="text-muted-foreground text-sm mb-4">
                     {tier.description}
                   </p>
+                  {tier.wasPrice && (
+                    <div className="inline-flex items-center gap-1.5 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-bold mb-3">
+                      <Zap className="w-3.5 h-3.5" />
+                      Black Friday
+                    </div>
+                  )}
                   <div className="mb-2">
+                    {tier.wasPrice && (
+                      <span className="block text-xl text-muted-foreground line-through mb-1">
+                        {tier.wasPrice}
+                      </span>
+                    )}
                     <span className="text-5xl font-bold text-primary">
                       {tier.price}
                     </span>
                   </div>
+                  {tier.saving && (
+                    <p className="text-sm font-semibold text-green-600 mb-1">
+                      {tier.saving} this Black Friday
+                    </p>
+                  )}
                   {tier.priceNote && (
                     <p className="text-sm text-muted-foreground">
                       {tier.priceNote}
