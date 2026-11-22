@@ -27,9 +27,9 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     {
       name: "Double Bed Room",
       description: "En-suite",
-      price: "£1,000",
-      wasPrice: "£1,500",
-      saving: "Save £500",
+      price: "£2,000",
+      wasPrice: "£3,000",
+      saving: "Save £1,000",
       priceNote: "per couple",
       paymentLink: "https://buy.stripe.com/9B65kEgryeasadN3refjG0s",
       features: [
@@ -72,9 +72,9 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     {
       name: "3 Nights Shared Room",
       description: "En-suite, shared accommodation",
-      price: "£800",
-      wasPrice: "£1,000",
-      saving: "Save £200",
+      price: "£1,000",
+      wasPrice: "£1,300",
+      saving: "Save £300",
       priceNote: "per person",
       paymentLink: "https://buy.stripe.com/cNifZi1wEeaseu35zmfjG0v",
       features: [
@@ -96,9 +96,9 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
     {
       name: "3 nights Private Room",
       description: "Private en-suite room",
-      price: "£1,200",
-      wasPrice: "£1,300",
-      saving: "Save £100",
+      price: "£1,300",
+      wasPrice: "£1,700",
+      saving: "Save £400",
       priceNote: "per person",
       paymentLink: "https://buy.stripe.com/6oUdRafnufewfy74vifjG0u",
       features: [
