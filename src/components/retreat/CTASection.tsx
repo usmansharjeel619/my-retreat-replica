@@ -57,16 +57,7 @@ const CTASection = ({ isCouplesMode }: CTASectionProps) => {
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-full text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300"
             asChild
           >
-            <a
-              href={
-                isCouplesMode
-                  ? "https://buy.stripe.com/fZubJ20sA2rKgCb1j6fjG0G"
-                  : "https://buy.stripe.com/dRmaEY5MU5DW3Pp3refjG0r"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
+            <a href="#pricing" className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
               Reserve Now
             </a>
