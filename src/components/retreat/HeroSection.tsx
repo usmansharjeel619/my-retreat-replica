@@ -136,7 +136,7 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
             <a
               href={
                 isCouplesMode
-                  ? "https://buy.stripe.com/9B65kEgryeasadN3refjG0s"
+                  ? "https://buy.stripe.com/fZubJ20sA2rKgCb1j6fjG0G"
                   : "https://buy.stripe.com/dRmaEY5MU5DW3Pp3refjG0r"
               }
               target="_blank"

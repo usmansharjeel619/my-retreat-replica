@@ -31,7 +31,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       wasPrice: "£3,000",
       saving: "Save £1,000",
       priceNote: "per couple",
-      paymentLink: "https://buy.stripe.com/9B65kEgryeasadN3refjG0s",
+      paymentLink: "https://buy.stripe.com/fZubJ20sA2rKgCb1j6fjG0G",
       features: [
         "Majority of retreat activities included",
         "Full meal plan",
@@ -55,7 +55,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       description: "Based on availability and request",
       price: "Enquire",
       priceNote: "",
-      paymentLink: "https://buy.stripe.com/9B65kEgryeasadN3refjG0s",
+      paymentLink: "https://buy.stripe.com/fZubJ20sA2rKgCb1j6fjG0G",
       features: [
         "All retreat activities included",
         "Full meal plan",
@@ -76,7 +76,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       wasPrice: "£1,300",
       saving: "Save £300",
       priceNote: "per person",
-      paymentLink: "https://buy.stripe.com/cNifZi1wEeaseu35zmfjG0v",
+      paymentLink: "https://buy.stripe.com/6oU8wQb7e1nGfy77HufjG0E",
       features: [
         "All retreat activities included",
         "Full meal plan",
@@ -100,7 +100,7 @@ const PricingSection = ({ isCouplesMode }: PricingSectionProps) => {
       wasPrice: "£1,700",
       saving: "Save £400",
       priceNote: "per person",
-      paymentLink: "https://buy.stripe.com/6oUdRafnufewfy74vifjG0u",
+      paymentLink: "https://buy.stripe.com/14A4gAdfmfewdpZd1OfjG0F",
       features: [
         "All retreat activities included",
         "Full meal plan", 
