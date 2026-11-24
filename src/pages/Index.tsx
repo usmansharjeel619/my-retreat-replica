@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navigation from "@/components/retreat/Navigation";
+import BlackFridayPopup from "@/components/retreat/BlackFridayPopup";
 import HeroSection from "@/components/retreat/HeroSection";
 import WhySection from "@/components/retreat/WhySection";
 import TeamSection from "@/components/retreat/TeamSection";
@@ -20,9 +21,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <BlackFridayPopup />
 
       {/* Toggle Button - Centered at top */}
-      <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50">
+      <div className="fixed top-32 left-1/2 -translate-x-1/2 z-50">
         <div className="bg-card/95 backdrop-blur-sm border border-border rounded-full p-1 shadow-warm">
           <div className="flex gap-1">
             <button

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import BlackFridayBanner from "./BlackFridayBanner";
 
 const navLinks = [
   { href: "#itinerary", label: "Itinerary" },
@@ -30,6 +31,7 @@ const Navigation = () => {
           : "bg-foreground/90 backdrop-blur-sm py-4"
       }`}
     >
+      <BlackFridayBanner collapsed={isScrolled} />
       <div className="container-wide flex items-center justify-between px-4">
         {/* Logo */}
         <a href="#" className="flex items-center group">
