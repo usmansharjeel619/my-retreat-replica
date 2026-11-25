@@ -79,7 +79,7 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
     },
     {
       day: "Day 4",
-      title: "Reflection & Departure",
+      title: "Reflection",
       activities: [
         { time: "8:00 AM", activity: "Swimming" },
         {
@@ -88,8 +88,12 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
             'Reflection Workshop "Our Healing Journey & Future Together"',
         },
         { time: "10:30 AM", activity: "Breakfast" },
-        { time: "12:00 PM", activity: "Departure" },
       ],
+    },
+    {
+      day: "Day 5",
+      title: "Departure",
+      activities: [{ time: "12:00 PM", activity: "Departure" }],
     },
   ];
 
@@ -158,7 +162,7 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
     },
     {
       day: "Day 4",
-      title: "Reflection & Departure",
+      title: "Reflection",
       activities: [
         { time: "8:00 AM", activity: "Swimming" },
         {
@@ -167,8 +171,12 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
             'Reflection Workshop "Our Healing Journey & changes of the future you"',
         },
         { time: "10:30 AM", activity: "Breakfast" },
-        { time: "12:00 PM", activity: "Departure" },
       ],
+    },
+    {
+      day: "Day 5",
+      title: "Departure",
+      activities: [{ time: "12:00 PM", activity: "Departure" }],
     },
   ];
 
@@ -180,7 +188,7 @@ const ItinerarySection = ({ isCouplesMode }: ItinerarySectionProps) => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="heading-lg mb-6">
-            Your <span className="text-gradient">4-Day Journey</span>
+            Your <span className="text-gradient">5-Day Journey</span>
           </h2>
           <p className="body-lg text-muted-foreground">
             Every day is carefully designed to balance healing, adventure, and

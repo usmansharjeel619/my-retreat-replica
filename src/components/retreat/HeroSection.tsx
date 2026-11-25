@@ -59,8 +59,8 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
           style={{ animationDelay: "0.2s" }}
         >
           {isCouplesMode
-            ? "3 Nights, 4 Days of Restoration"
-            : "3 Nights, 4 Days of Restoration"}
+            ? "4 Nights, 5 Days of Restoration"
+            : "4 Nights, 5 Days of Restoration"}
           <br />
           <span className="font-medium text-foreground">
             All-Inclusive Experience
@@ -77,13 +77,13 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  3 nights, 4 days Marrakech
+                  4 nights, 5 days Marrakech
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  26-29 March 2027
+                  26-30 March 2027
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
@@ -97,12 +97,12 @@ const HeroSection = ({ isCouplesMode }: HeroSectionProps) => {
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">
-                  3 nights, 4 days Marrakech
+                  4 nights, 5 days Marrakech
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">21-24 May 2027</span>
+                <span className="text-sm font-medium">21-25 May 2027</span>
               </div>
               <div className="flex items-center gap-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
                 <Users className="w-4 h-4 text-primary" />
